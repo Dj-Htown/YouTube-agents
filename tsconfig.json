@@ -1,45 +1,29 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
+  // Ahoy! This be the TypeScript map fer our prime-number voyage.
   "compilerOptions": {
-    // File Layout
+    // Arrr! Keep source in src and compiled loot in dist.
     "rootDir": "src",
     "outDir": "dist",
 
-    // Environment Settings
-    // See also https://aka.ms/tsconfig/module
+    // Avast! We sail with CommonJS on Node.js waters.
     "module": "commonjs",
     "target": "es2020",
-    "types": [],
+    "types": ["node"],
     "lib": ["es2020"],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
-    // and npm install -D @types/node
 
-    // Other Outputs
+    // Shiver me timbers! Strict checks keep bugs off the deck.
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Hoist the colors! Useful maps for debugging and tooling.
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
 
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-  }
+    // Ye be warned: skip library checks to keep builds swift.
+    "skipLibCheck": true
+  },
+  // Here be dragons: only compile the source cargo.
+  "include": ["src/**/*"]
 }
