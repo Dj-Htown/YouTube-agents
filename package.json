@@ -1,0 +1,28 @@
+{
+  "name": "youtube-agents",
+  "version": "1.0.0",
+  "description": "Learning to build custom agents from YouTube videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dj-Htown/YouTube-agents.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dj-Htown/YouTube-agents/issues"
+  },
+  "homepage": "https://github.com/Dj-Htown/YouTube-agents#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}
